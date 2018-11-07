@@ -1,0 +1,67 @@
+{
+  "name": "iwantecards",
+  "version": "1.0.0",
+  "description": "Test package with storybook ",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-closure-compiler": "^0.4.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-usemin": "^0.3.29",
+    "gulp-webpack": "^1.5.0",
+    "gulp-webserver": "^0.9.1",
+    "html-webpack-plugin": "^3.2.0",
+    "new": "^0.1.1",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
+    "psi": "^3.1.0",
+    "react-hot-loader": "^4.3.11",
+    "react-route": "^1.0.3",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.24.0",
+    "webpack-bundle-tracker": "^0.4.2-beta",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "4": "0.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^4.0.0",
+    "@storybook/addon-links": "^4.0.0",
+    "@storybook/addons": "^4.0.0",
+    "@storybook/react": "^4.0.2",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "jest": "^23.6.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-test-renderer": "^16.6.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "webpack": "webpack --config webpack.prod.config.js --progress --colors",
+    "watch": "webpack-dev-server --config ./webpack.dev.config.js --mode development"
+  },
+  "author": "",
+  "license": "ISC"
+}

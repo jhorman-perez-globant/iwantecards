@@ -1,0 +1,105 @@
+
+.navbar_app
+    //background rgba(first_color, .9)
+    background white
+    box-shadow 1px 0 1px rgba(black, .2)
+    height 100vh
+    left 0
+    overflow-y auto
+    padding-top 2rem
+    position fixed
+    transition all .3s
+    visibility visible
+    width 20%
+    z-index 4
+
+    &-list
+        padding 0
+        .list-item
+            a
+                color first_color
+                font-weight bold
+                display block
+                font-size .9rem
+                padding .8rem
+                padding-left 25%
+                transition all .3s
+                text-align left
+                &:hover
+                    background whitesmoke
+                    color first_color
+                .icon_container
+                    width 20%
+                    .icon
+                        fill dimgrey
+                .info
+                    color dimgrey
+                    font-size .9rem
+                    font-weight bold
+                    width 80%
+            .submenu
+                background white
+                .subitem
+                    background white
+                    transition all .3s
+                    a
+                        display block
+                        padding .4rem
+                        padding-left 20%
+                        .icon_container
+                            width 20%
+                            .icon
+                                fill dimgrey
+                        .info
+                            color dimgrey
+                            font-size .8rem
+                            font-weight normal
+                            width 80%
+                    &:hover
+                        background whitesmoke
+                .subitem.active
+                    background color_primario
+                    transition all .3s
+                    a
+                        .icon_container
+                            .icon
+                                fill white
+                        .info
+                            color white
+            .icon_container
+                position relative
+                .icon
+                    center_vh()
+        .item.active
+            background whitesmoke
+            a
+                .icon_container
+                    .icon
+                        fill first_color
+                .info
+                    color first_color
+
+    &-logo
+        width 100%
+        img
+            center_h_block()
+            width 130px
+
+
+.list
+    &--no_decoration
+        .list-item
+            list-style none
+            a
+                display block
+                text-decoration none
+
+
+.divider
+    center_h_block()
+    background rgba(gray, .2)
+    border 0
+    height 1px
+    margin-bottom 1rem
+    margin-top 1rem
+    width 80%
